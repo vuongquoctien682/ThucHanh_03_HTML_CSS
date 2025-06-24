@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS các môn học yêu thích</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas: "header content footer";
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 5px;
+            background-color: rgb(216, 82, 82);
+            padding: 1px;
+        }
+        
+        .container>div {
+            background-color: rgba(161, 240, 166, 0.8);
+            padding: 5px;
+        }
+        
+        .container>div.header {
+            grid-area: header;
+            text-align: center;
+        }
+        
+        .container>div.content {
+            grid-area: content;
+            text-align: center;
+        }
+        
+        .container>div.footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Toán</h3>
+        </div>
+        <div class="content">
+            <h3>Lý</h3>
+        </div>
+        <div class="footer">
+            <h3>Hóa</h3>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM đăng ký thông tin cá nhân</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef1f5;
+        }
+        
+        form {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .form-row input,
+        .form-row select {
+            flex: 1;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+        }
+        
+        .form-row.single {
+            flex-direction: column;
+        }
+        
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h2>Form Đăng Ký Thông Tin</h2>
+
+        <div class="form-row">
+            <input type="text" placeholder="Họ và tên" required>
+            <select required>
+                <option value="">Giới tính</option>
+                <option value="nam">Nam</option>
+                <option value="nu">Nữ</option>
+                <option value="khac">Khác</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Số điện thoại" required>
+        </div>
+
+        <div class="form-row single">
+            <button type="submit">Gửi</button>
+        </div>
+    </form>
+</body>
+
+</html>
